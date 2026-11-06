@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto em Voz — Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔊 Texto em Voz — Fácil de Ouvir</h1>
+        <p class="descricao">Escreva ou cole seu texto abaixo e clique em Ouvir</p>
+
+        <textarea id="textoEntrada" placeholder="Digite aqui o que você quer ouvir..."></textarea>
+
+        <div class="botoes">
+            <button class="btn-ouvir" id="btnOuvir">▶ Ouvir</button>
+            <button class="btn-pausar" id="btnPausar">⏸ Pausar</button>
+            <button class="btn-limpar" id="btnLimpar">🗑 Limpar</button>
+        </div>
+
+        <div class="config">
+            <h3>⚙️ Ajustes</h3>
+            
+            <label for="seletorVoz">Escolha a voz:</label>
+            <select id="seletorVoz"></select>
+
+            <label for="velocidade">Velocidade da fala:</label>
+            <input type="range" id="velocidade" min="0.5" max="2" step="0.1" value="1">
+            <p id="valorVelocidade" class="legenda-ajuste">Normal</p>
+
+            <label for="tom">Tom da voz:</label>
+            <input type="range" id="tom" min="0.5" max="2" step="0.1" value="1">
+            <p id="valorTom" class="legenda-ajuste">Normal</p>
+        </div>
+
+        <div id="statusMsg" class="status falando"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

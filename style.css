@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.descricao {
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    font-size: 20px;
+    border: 3px solid #b2bec3;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0984e3;
+    box-shadow: 0 0 0 4px rgba(9,132,227,0.2);
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+button {
+    flex: 1;
+    min-width: 140px;
+    padding: 18px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ouvir {
+    background-color: #0984e3;
+    color: white;
+}
+
+.btn-ouvir:hover {
+    background-color: #0769b8;
+}
+
+.btn-pausar {
+    background-color: #fdcb6e;
+    color: #2d3436;
+}
+
+.btn-pausar:hover {
+    background-color: #f9b32f;
+}
+
+.btn-limpar {
+    background-color: #e17055;
+    color: white;
+}
+
+.btn-limpar:hover {
+    background-color: #d63031;
+}
+
+.config {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.config h3 {
+    margin-bottom: 15px;
+    color: #2d3436;
+}
+
+.config label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d3436;
+    display: block;
+    margin: 12px 0 6px;
+}
+
+select, input[type="range"] {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #b2bec3;
+}
+
+.legenda-ajuste {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+
+.falando {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+/* Acessibilidade — texto grande e contraste alto */
+@media (prefers-contrast: high) {
+    body { background: white; }
+    .container { border: 3px solid black; }
+    textarea { border-width: 4px; }
+}
+
